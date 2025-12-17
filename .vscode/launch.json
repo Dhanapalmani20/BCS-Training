@@ -1,0 +1,14 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Open intex.html",
+            "file": "c:\\Users\\Dhanapal\\Desktop\\BCS Training\\Day -4\\intex.html",
+            "runtimeExecutable": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
+            // If the above path doesn't work, try this one:
+            // "runtimeExecutable": "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe"
+        }
+    ]
+}
