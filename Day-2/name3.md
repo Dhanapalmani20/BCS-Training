@@ -1,3 +1,62 @@
+### DAY 2 CODING SECTION
+
+
+- `!<tab>` - boiler plate code
+- `ctrl + /` - Command/ uncommand
+- `win+.` - imoj
+- `p + <tab>` - paragaraph tb created
+- `ctrl+'`- settings
+
+# Fundamentals of Javascript
+
+**// command line**
+
+### Data Types
+
+- primitive data type
+- non primitive data type
+  **add photo image**
+
+### Type casting / Coersion
+
+- '+' is used for addition and concadination
+- javascript itself doing implicit coersion
+-
+
+### operators in javascript
+
+1. assignment operators
+2. comparison operator
+3. arithametic operator
+4. Logical operators
+
+**all comparison operators returns Boolean operator**
+
+> logical operator
+
+1. Logical And
+
+- both values are true the result is true
+-
+
+2. Logical Or
+
+- both a and b is false the result is false
+-
+
+## Structure of web bbrowser
+
+### User Interfacde
+
+- <- , -> , refresh these are user interface
+
+### Cookies
+
+Cookies for stored credntials data .
+
+### cache means copy
+
+
 # Javascript Notes
 
 ## Opertor
