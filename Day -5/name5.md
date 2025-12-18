@@ -89,6 +89,7 @@ the above 2 lines push code in git with your name and email shown.
 
 > Default value is taken undefined value
 > , skip the value
+> undefined is a undefined
 
 ## Rest ... Operator
 

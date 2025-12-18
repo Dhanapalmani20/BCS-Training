@@ -7,7 +7,9 @@ var petProfile = {
     name: "Tarachand",
     phone: "9830303923",
   },
+  
 };
+
 
 // console.log("petProfile 🎊", petProfile);
 // console.log("petProfile.owner", petProfile.owner);
