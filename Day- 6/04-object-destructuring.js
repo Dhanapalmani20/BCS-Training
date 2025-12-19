@@ -19,4 +19,3 @@ const {city}=address;
 console.log(name);
 console.log(city);
 console.log(h2 );
-
