@@ -2,7 +2,7 @@ const student = {
   name: "Abishek",
   age: 20,
   address: {
-    city: "Trichy",
+    // city: "Trichy",
     state: "TN",
   },
   hobbies: ["cricket", "football", "carrom"],
@@ -19,9 +19,18 @@ const student = {
 // console.log(name);
 // console.log(city);
 // console.log(h2 );
+// const {
+//   name,
+//   address: { city },
+//   hobbies: [, h2],
+// } = student;
+// //const{city,}=(hobbies,address);
+// console.log(name);
+// console.log(city);
+// console.log(h2);
 const {
   name,
-  address: { city },
+  address: { city = "n/a" },
   hobbies: [, h2],
 } = student;
 //const{city,}=(hobbies,address);
