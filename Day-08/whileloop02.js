@@ -1,4 +1,4 @@
-printPattern();
+//printPattern();
 // Output
 // ❤️
 // ❤️❤️
@@ -7,8 +7,8 @@ printPattern();
 // ❤️❤️❤️❤️❤️
 function printPattern() {
   let heart = 1;
-  while (heart <= 5) {
-    console.log(` ❤️ `.repeat(heart));
+  while (heart <= noofRows) {
+    console.log(heart.repeat(heart));
     heart++;
   }
 }
