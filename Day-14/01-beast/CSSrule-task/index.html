@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Border</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+
+        :root{
+            --primary-clr: #9cdbfff7;
+            --dhanpaul: #0ea7fff7;
+            font-size: 16px;
+
+
+        }
+      body {
+        display: grid;
+        place-content: center;
+        min-height: 100vh;
+      }
+
+      /* .content {
+        font-size: 2rem;
+        width: 25rem;
+        padding: 1.5rem;
+        border: 10px solid rebeccapurple;
+        border-top-color: #bfec1f;
+        border-style: dashed; 
+        border-left-width: 1rem;
+        border-radius: 30px;
+      } */
+
+      .info {
+        font-size: 24px;
+        width: 800px;
+        font-family: Roboto;
+        background: var(--primary-clr);
+        padding: 2rem;
+        border-left: 1rem solid var(--dhanpaul);
+        border-radius: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div class="content">
+      <p>
+        Human Rights | International Roma Day on 8 April is a key date to mark
+        Romani culture, made more significant in Romania since the passing of
+        last year’s landmark legislation there, to combat hate-speech against
+        the Roma – the first law of its kind in Europe.
+      </p>
+    </div> -->
+
+    <div class="info">
+      <h4>Intended Audience</h4>
+      <p>
+        This tutorial assumes that you already have a static React site
+        (Gatsby/Next) being deployed on Vercel or Netlify.
+      </p>
+      <p>
+        It's written with the intermediate React developer in mind; if you're
+        newer to the modern JS ecosystem, it might be a bit hard to follow.
+      </p>
+    </div>
+  </body>
+</html>
