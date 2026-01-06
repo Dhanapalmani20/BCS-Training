@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- 1. Internal ⚠️ -->
+    <style>
+      p {
+        color: orange;
+      }
+    </style>
+
+    <!-- 2. External ✅ -->
+    <!-- 1. Separation of concern 2. Maintainability 3. Reuse ⬆️ -->
+    <link rel="stylesheet" href="./fun.css" />
+  </head>
+  <body>
+    <p>Cool</p>
+
+    <h2>Welcome</h2>
+
+    <!-- 3. Inline 💀  (Specificity)-->
+    <h1 style="color: crimson; text-transform: uppercase">Amazing</h1>
+  </body>
+</html>

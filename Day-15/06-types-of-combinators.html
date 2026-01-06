@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      /* .content > p{
+        color: orange
+      } */
+
+      /* .content p {
+        color: orange;
+      }  */
+
+      /* .main > p {
+        color: purple;
+      } */
+
+      /* div div p{
+        color: orange
+      } */
+
+      /* Sibling Adjacent + */
+
+      /* h1 + p {
+        color: orange;
+      }
+
+      h1 + p + p {
+        color: orange;
+      } */
+
+      h1 + p,
+      h1 + p + p {
+        color: orange;
+      }
+
+      /* .main,
+      .content {
+        border: 2px solid red;
+      } */
+
+      /* 6 & 6.5 */
+
+      /* General Sibling ~ */
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <p>Para 1</p>
+      <p>Para 2</p>
+      <p>Para 3</p>
+      <p>Para 4</p>
+
+      <!-- 5, 6, 7, 8 -->
+      <div class="content">
+        <p>Para 5</p>
+        <h1>Cool 1</h1>
+        <p>Para 6</p>
+        <p>Para 6.5</p>
+        <h2>Cool 2</h2>
+        <div class="footer">
+          <p>Para 9</p>
+          <section><p>Para 11</p></section>
+        </div>
+        <p>Para 7</p>
+        <p>Para 8</p>
+      </div>
+    </div>
+  </body>
+</html>
