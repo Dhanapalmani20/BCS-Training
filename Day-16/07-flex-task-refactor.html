@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* CSS nesting */
+      /* header > h2 {
+        
+      } */
+
+      /* header  h2 {
+        
+      }  */
+
+      .main-container {
+        /* Child */
+        > h2 {
+          color: orange;
+        }
+
+        /* Descendant */
+        ol {
+          list-style: none;
+          a {
+            text-decoration: none;
+          }
+        }
+
+        button {
+          background: skyblue;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="main-container">
+      <h2>Bullo</h2>
+
+      <ol>
+        <li><a href="">Home</a></li>
+        <li><a href="">Service</a></li>
+        <li><a href="">Blog</a></li>
+        <li><a href="">About US</a></li>
+      </ol>
+
+      <button class="cta-btn">Get Started</button>
+    </header>
+    <!-- <img src="./05-flex-task.png" alt="" /> -->
+  </body>
+</html>

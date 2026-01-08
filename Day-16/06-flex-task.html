@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --primary-ff: sans-serif;
+        --accent-ff: "Pacifico", sans-serif;
+
+        --primary-bg-clr: oklch(0.66 0.18 256.08);
+        --primary-btn-clr: white;
+      }
+
+      body {
+        margin: 0;
+      }
+
+      header {
+        display: flex;
+        /* background: rgb(255, 225, 0); */
+        justify-content: space-between;
+        align-items: center;
+        padding: 0rem 1rem;
+
+        font-family: var(--primary-ff);
+      }
+
+      header > ol {
+        display: flex;
+        list-style: none;
+        gap: 1rem;
+        padding: 0px;
+      }
+
+      header > h2 {
+        font-family: var(--accent-ff);
+      }
+
+      li > a {
+        text-decoration: none;
+      }
+
+      .cta-btn > a > li {
+        --curve-sz: 1rem;
+
+        border-radius: var(--curve-sz);
+        border: none;
+        padding: calc(var(--curve-sz) * 0.5) var(--curve-sz);
+        background: var(--primary-bg-clr);
+        color: var(--primary-btn-clr);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h2>Bullo</h2>
+
+      <ol>
+        <li><a href="">Home</a></li>
+        <li><a href="">Service</a></li>
+        <li><a href="">Blog</a></li>
+        <li><a href="">About US</a></li>
+      </ol>
+
+      <button class="cta-btn">Get Started</button>
+    </header>
+    <!-- <img src="./05-flex-task.png" alt="" /> -->
+  </body>
+</html>
