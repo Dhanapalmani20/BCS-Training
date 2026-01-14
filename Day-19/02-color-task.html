@@ -22,27 +22,33 @@
   <body>
     <!-- Event listener - Event - click -->
     <button onclick="start()">▶️</button>
+    <button onclick="pause()">⏸️</button>
     <button onclick="stop()">⏹️</button>
 
     <script>
       // Lexical Scope
       let nkInterval;
+      let i = 0;
+      function pause() {
+        console.log("pauseing...");
+        clearInterval(nkInterval);
+      }
       function start() {
-        let i = 0;
         nkInterval = setInterval(() => {
           // Restart when out of bounds
           if (i == colors.length) {
             i = 0;
           }
+          console.log(i, colors[i]);
           document.body.style.background = colors[i];
           i++;
         }, 1000);
         console.log("Starting...");
       }
-
       function stop() {
         console.log("stoping...");
         clearInterval(nkInterval);
+        i = 0;
       }
 
       const colors = ["crimson", "orange", "teal", "pink", "blue"];
