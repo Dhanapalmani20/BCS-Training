@@ -52,23 +52,15 @@ const moreOrders = [
     ratings: [5, 4, 5],
   },
 ];
-const getHighRatedDishes = (orders, moreOrders = []) => {
-  return [...orders, ...moreOrders]
-    .filter((get) => get.ratings.every((rate) => rate >= 4))
-    .map((ord) => ord.dishName)
-    .join(", ");
-};
-// const Order = (orders, moreOrders = []) => {
-//   return orders.map(
-//     (order) => `${order.id}: ${order.ratings}: ${order.dishName}`
-//   );
-// };
+ function mergeOrders(baseOrders, extraOrders = []){
+const merge_Orders=[...baseOrders,...extraOrders]
+return merge_Orders ;
+}
+const merged1 = mergeOrders(orders, moreOrders);
+console.log(merged1.length);
+// 7
 
-console.log(getHighRatedDishes(orders));
-// Burger, Sushi, Pasta
+const merged2 = mergeOrders(orders);
+console.log(merged2.length);
+// 5
 
-console.log(getHighRatedDishes(orders, moreOrders));
-// Burger, Sushi, Pasta, Tacos, Ramen
-
-console.log(getHighRatedDishes([], moreOrders));
-// Tacos, Ramen

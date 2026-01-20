@@ -52,23 +52,32 @@ const moreOrders = [
     ratings: [5, 4, 5],
   },
 ];
-const getHighRatedDishes = (orders, moreOrders = []) => {
-  return [...orders, ...moreOrders]
-    .filter((get) => get.ratings.every((rate) => rate >= 4))
-    .map((ord) => ord.dishName)
+const getDishNamesByIds = (orderList, ...ids) => {
+  const dishNames = ids
+    .map((id) => {
+      const getDishName = orderList.find((dish) => dish.id === id);
+      return `${getDishName?.dishName ?? "unknown dish"}`;
+    })
     .join(", ");
+  return `Selected Dishes:${dishNames}`;
 };
-// const Order = (orders, moreOrders = []) => {
-//   return orders.map(
-//     (order) => `${order.id}: ${order.ratings}: ${order.dishName}`
-//   );
-// };
 
-console.log(getHighRatedDishes(orders));
-// Burger, Sushi, Pasta
+// const getDishNamesByIds = (orderList, ...ids) =>
+//   `Selected Dishes: ${ids
+//     .map(
+//       (id) => orderList.find((sum) => sum.id === id)?.dishName ?? "Unknown Dist"
+//     )
 
-console.log(getHighRatedDishes(orders, moreOrders));
-// Burger, Sushi, Pasta, Tacos, Ramen
+//     .join(", ")}`;
 
-console.log(getHighRatedDishes([], moreOrders));
-// Tacos, Ramen
+console.log(getDishNamesByIds(orders, 1, 3, 5));
+// Selected Dishes: Burger, Sushi, Pasta
+
+console.log(getDishNamesByIds(orders, 1, 6));
+// Selected Dishes: Burger, Unknown Dish
+
+console.log(getDishNamesByIds(orders, 5, 1));
+// Selected Dishes: Pasta, Burger
+
+console.log(getDishNamesByIds(orders, 3, 3, 999));
+// Selected Dishes: Sushi, Sushi, Unknown Dish

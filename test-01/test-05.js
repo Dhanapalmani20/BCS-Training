@@ -52,13 +52,14 @@ const moreOrders = [
     ratings: [5, 4, 5],
   },
 ];
-const listOrders=(...orderItems) =>{
-    return orderItems 
-    .map((order))=>{
-         `${}`
-
-}
-}
+const listOrders = (...orderItems) => {
+  return orderItems
+    .map(
+      (get) =>
+        `${get?.dishName ?? "Unknown Dish"} (${get?.category}??"Unknown Category")`,
+    )
+    .join(", ");
+};
 console.log(listOrders(...orders));
 // Burger (Fast Food), Pizza (Italian), Sushi (Japanese), Salad (Healthy), Pasta (Italian)
 
