@@ -1,7 +1,4 @@
 // Creating Promise
-// resolve & reject - call back fn
-
-// Creating Promise
 // resolve & reject - callback fn
 
 // resolve - fulfilled, reject - rejected
@@ -114,15 +111,54 @@
 //   }
 // });
 
-// // Promise will wait - resolve or reject
-// // console.log("Test Started");
-// // console.log(drivingTest); // pending
+// // // Promise will wait - resolve or reject
+// // // console.log("Test Started");
+// // // console.log(drivingTest); // pending
 // drivingTest
 //   .then((msg) => msg + " Super🎊") // Promise object
 //   .then((y) => console.log("Cool " + y)) //
 //   .then((y1) => console.log(y1 + " Amazing")); //
 
-// Case 8: .then chaining + catch
+// Case 9: .then chaining + catch
+
+// const drivingTest = new Promise((resolve, reject) => {
+//   let age = 14;
+//   if (age >= 18) {
+//     setTimeout(() => {
+//       resolve("Allowed for Driving Test 🚐");
+//     }, 5000);
+//   } else {
+//     reject("Try again after some years 👶🍼");
+//   }
+// });
+
+// // Promise will wait - resolve or reject
+// // console.log("Test Started");
+// // console.log(drivingTest); // pending
+// drivingTest
+//   .then((msg) => msg + " Super🎊") // skip
+//   .then((y) => console.log("Cool " + y)) // skip
+//   .then((y1) => console.log(y1 + " Amazing")) // skip
+//   .catch((msg) => console.log("Oops:" + msg));
+
+// Case 10: .then chaining + catch + then
+// const drivingTest = new Promise((resolve, reject) => {
+//   let age = 14;
+//   if (age >= 18) {
+//     setTimeout(() => {
+//       resolve("Allowed for Driving Test 🚐");
+//     }, 5000);
+//   } else {
+//     reject("Try again after some years 👶🍼");
+//   }
+// });
+
+// drivingTest
+//   .then((msg) => msg + " Super🎊") // skip
+//   .then((y) => console.log("Cool " + y)) // skip
+//   .then((y1) => console.log(y1 + " Amazing")) // skip
+//   .catch((msg) => "Oops:" + msg)
+//   .then((msg) => console.log("We are back: " + msg));
 
 const drivingTest = new Promise((resolve, reject) => {
   let age = 20;
@@ -135,12 +171,9 @@ const drivingTest = new Promise((resolve, reject) => {
   }
 });
 
-// Promise will wait - resolve or reject
-// console.log("Test Started");
-// console.log(drivingTest); // pending
 drivingTest
   .then((msg) => msg + " Super🎊") // skip
   .then((y) => console.log("Cool " + y)) // skip
-  .then((y1) => console.log(y1 + " Amazing")) // skip
-  .catch((msg) => console.log("Oops:" + msg))
-  .then((msg) => console.log("we are back:" + msg));
+  .then((y1) => y1 + " Amazing") // skip
+  .catch((msg) => "Oops:" + msg)
+  .then((msg) => console.log("We are back: " + msg));
