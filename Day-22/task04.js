@@ -1,13 +1,9 @@
-// Task 1.3 📊
-// Print countries with a population of more than 10,000,000.
+// Get the top 10 most populated countries in descending order.
 
 // Output Format:
 
-// 01. India - 150000000
-// 02. China - 120000000
-// 03. Russia - 80000000
-// ..
-// 10. Austraila - 300000
+// 1. India - 150000000
+// 2. China - 120000000
 // ...
 
 fetch(
@@ -16,11 +12,10 @@ fetch(
   .then((res) => res.json())
   .then((num) =>
     num
-      .filter((name1) => name1.population >= 10_00_00_000)
+      .filter((name1) => name1.population >= 1_00_00_000)
       .toSorted((a, b) => b.population - a.population)
+      .slice(1, 11)
       .map((num, ind) =>
         console.log(`${ind}:${num.name.common}:${num.population}`),
       ),
   );
-
-// .then((data) => console.log(data)
