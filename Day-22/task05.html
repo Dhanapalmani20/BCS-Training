@@ -13,6 +13,28 @@ list. // Item Format: //
     <title>Document</title>
   </head>
   <body>
- 
+    <script>
+      fetch(
+        "https://restcountries.com/v3.1/all?fields=name,flags,region,population,capital",
+      )
+        .then((res) => res.json())
+        .then((num) =>
+          num
+            .filter((name1) => name1.population >= 1_00_00_000)
+            .toSorted((a, b) => b.population - a.population)
+            .slice(0, 11)
+            .map((num, ind) =>
+              console.log(`${ind}:${num.name.common}:${num.population}`),
+            )
+            .then((message) => message)
+            .then((message) => {
+              for (let msg of message) {
+                const listItem = document.createElement("li");
+                listItem.innerText = msg;
+                document.querySelector(".hobbies-container").append(listItem);
+              }
+            }),
+        );
+    </script>
   </body>
 </html>

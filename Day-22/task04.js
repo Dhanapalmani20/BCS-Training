@@ -14,7 +14,7 @@ fetch(
     num
       .filter((name1) => name1.population >= 1_00_00_000)
       .toSorted((a, b) => b.population - a.population)
-      .slice(1, 11)
+      .slice(0, 11)
       .map((num, ind) =>
         console.log(`${ind}:${num.name.common}:${num.population}`),
       ),
