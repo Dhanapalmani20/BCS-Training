@@ -1,0 +1,398 @@
+<title>Document</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      .sunnyhd {
+        padding-top: 27px;
+        padding-bottom: 27px;
+      }
+      .topbar {
+        display: flex;
+        padding-top: 25px;
+        justify-content: center;
+      }
+
+      button {
+        height: 3rem;
+        width: 7rem;
+        border-radius: 30px;
+        font-family: Playfair Display;
+        font-weight: 800;
+        border-color: aliceblue;
+        border: 0;
+        letter-spacing: 1px;
+      }
+
+      .barlist {
+        display: flex;
+        gap: 3rem;
+        padding-left: 38rem;
+        align-items: center;
+        list-style: none;
+        color: aliceblue;
+        font-weight: 100;
+        font-family: sans-serif;
+      }
+
+      .hero-container {
+        background: url("./sunnyside-agency-landing-page-main/images/desktop/image-header.jpg");
+        height: 38rem;
+        width: auto;
+        background-size: cover;
+      }
+
+      .creative {
+        font-size: 36px;
+        letter-spacing: 10px;
+        display: flex;
+        justify-content: space-evenly;
+        padding-top: 70px;
+        font-weight: 20rem;
+        color: aliceblue;
+      }
+      .arrow {
+        padding-top: 2rem;
+        padding-left: 38.5rem;
+      }
+      .box1 {
+        background-color: aqua;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: center;
+        padding-left: 10rem;
+        padding-right: 11rem;
+      }
+      .box4 {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        justify-content: center;
+        padding-left: 10rem;
+        padding-right: 11rem;
+        background-color: blueviolet;
+      }
+
+      .box2 {
+        img {
+          width: 100%;
+          height: auto;
+          display: block;
+        }
+      }
+      .box3 {
+        img {
+          width: 100%;
+          height: auto;
+          display: block;
+        }
+      }
+      .box5 {
+        width: 100%;
+        height: 45rem;
+        background-image: url("./sunnyside-agency-landing-page-main/images/desktop/image-graphic-design.jpg");
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+      .box5 > h1 {
+        padding-left: 3rem;
+        margin-top: 9.5rem;
+      }
+      .box5 > p {
+        padding-right: 10rem;
+        padding-left: 10rem;
+      }
+      .box6 {
+        width: 100%;
+        height: 37.5rem;
+        display: flex;
+        background-image: url("./sunnyside-agency-landing-page-main/images/desktop/image-photography.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+      .box6 > p {
+        padding-right: 130px;
+        padding-left: 190px;
+      }
+      .box6 > h1 {
+        padding-left: 5rem;
+        margin-top: 15rem;
+      }
+      .content-box1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 0;
+      }
+      .testimonials {
+        text-align: center;
+        padding-top: 50px;
+        background-color: rgb(131, 131, 230);
+        margin-bottom: 1rem;
+      }
+      .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+      .firstbox {
+        background-color: aqua;
+        .emily {
+          border-radius: 50%;
+        }
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-left: 50px;
+        padding-right: 50px;
+        height: 40rem;
+      }
+      .secondbox {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-left: 50px;
+        padding-right: 50px;
+        background-color: rgb(232, 109, 191);
+        .jennie {
+          border-radius: 50%;
+        }
+      }
+      .thirdbox {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-left: 50px;
+        padding-right: 50px;
+        background-color: rgb(84, 166, 105);
+        .thomas {
+          border-radius: 50%;
+        }
+      }
+      .content-images {
+        display: flex;
+        height: 25rem;
+      }
+      .last-box {
+        height: 20rem;
+        background-color: rgb(84, 166, 105);
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+      .sunny {
+        margin-top: 2rem;
+        margin-left: 5.5rem;
+        color: #2f7768;
+      }
+      .end {
+        display: flex;
+        column-gap: 3rem;
+        margin-top: 0;
+        list-style: none;
+      }
+      .logo {
+        display: flex;
+        justify-content: space-evenly;
+        align-content: flex-end;
+        margin-bottom: 7rem;
+        margin-top: 20px;
+        padding-left: 52px;
+        padding-right: 21px;
+      }
+      .cube {
+        height: 100%;
+        width: 18.65rem;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="hero-container">
+      <div class="sunnyheading">
+        <header class="topbar">
+          <img
+            class="sunnyhd"
+            src="./sunnyside-agency-landing-page-main/images/logo.svg"
+            alt=""
+          />
+          <ul class="barlist">
+            <li>About</li>
+            <li>Services</li>
+            <li>Projects</li>
+            <button>CONTACTS</button>
+          </ul>
+        </header>
+      </div>
+
+      <h1 class="creative">WE ARE CREATIVES</h1>
+      <img
+        src="./sunnyside-agency-landing-page-main/images/icon-arrow-down.svg"
+        alt=""
+        class="arrow"
+      />
+    </section>
+    <div class="content-box1">
+      <div class="box1">
+        <h1>Transform your brand</h1>
+
+        <p>
+          We are a full-service creative agency specializing in helping brands
+          grow fast. Engage your clients through compelling visuals that do most
+          of the marketing for you.
+        </p>
+        <h3>Learn more</h3>
+      </div>
+      <div class="box2">
+        <img
+          src="./sunnyside-agency-landing-page-main/images/desktop/image-transform.jpg"
+          alt=""
+        />
+      </div>
+
+      <div class="box3">
+        <img
+          src="./sunnyside-agency-landing-page-main/images/desktop/image-stand-out.jpg"
+          alt=""
+        />
+      </div>
+      <div class="box4">
+        <h1>Stand out to the right audience</h1>
+
+        <p>
+          Using a collaborative formula of designers, researchers,
+          photographers, videographers, and copywriters, we’ll build and extend
+          your brand in digital places.
+        </p>
+
+        <h3>Learn more</h3>
+      </div>
+
+      <div class="box5">
+        <h1>Graphic design</h1>
+        <p>
+          Great design makes you memorable. We deliver artwork that underscores
+          your brand message and captures potential clients’ attention.
+        </p>
+      </div>
+      <sectioin class="last-box">
+        <div class="box6">
+          <h1>Photography</h1>
+          <p>
+            Increase your credibility by getting the most stunning, high-quality
+            photos that improve your business image.
+          </p>
+        </div>
+      </sectioin>
+    </div>
+    <section class="testimonials">
+      <h2>CLIENT TESTIMONIALS</h2>
+    </section>
+    <section class="container">
+      <div class="firstbox">
+        <img
+          class="emily"
+          src="./sunnyside-agency-landing-page-main/images/image-emily.jpg"
+          alt=""
+        />
+        <p>
+          We put our trust in Sunnyside and they delivered, making sure our
+          needs were met and deadlines were always hit.
+        </p>
+        <h3>Emily R.</h3>
+        <p>Marketing Director</p>
+      </div>
+      <div class="secondbox">
+        <img
+          class="jennie"
+          src="./sunnyside-agency-landing-page-main/images/image-thomas.jpg"
+          alt=""
+        />
+        <p>
+          Sunnyside’s enthusiasm coupled with their keen interest in our brand’s
+          success made it a satisfying and enjoyable experience.
+        </p>
+        <h3>Thomas S.</h3>
+        <p>Chief Operating Officer</p>
+      </div>
+      <div class="thirdbox">
+        <img
+          class="thomas"
+          src="./sunnyside-agency-landing-page-main/images/image-jennie.jpg"
+          alt=""
+        />
+        <p>
+          Incredible end result! Our sales increased over 400% when we worked
+          with Sunnyside. Highly recommended!
+        </p>
+        <h3>Jennie F.</h3>
+        <p>Business Owner</p>
+      </div>
+    </section>
+    <div class="content-images">
+      <img
+        src="./sunnyside-agency-landing-page-main/images/desktop/image-gallery-milkbottles.jpg"
+        alt=""
+        class="milk"
+      />
+      <img
+        src="./sunnyside-agency-landing-page-main/images/desktop/image-gallery-orange.jpg"
+        alt=""
+        class="orange"
+      />
+      <img
+        src="./sunnyside-agency-landing-page-main/images/desktop/image-gallery-cone.jpg"
+        alt=""
+        class="cone"
+      />
+      <img
+        src="./sunnyside-agency-landing-page-main/images/desktop/image-gallery-sugarcubes.jpg"
+        alt=""
+        class="cube"
+      />
+    </div>
+    <div class="last-box">
+      <img
+        src="./sunnyside-agency-landing-page-main/images/logo.svg"
+        alt=""
+        class="sunny"
+      />
+      <ul class="end">
+        <li>About</li>
+        <li>Service</li>
+        <li>Project</li>
+      </ul>
+      <div class="logo">
+        <img
+          src="./sunnyside-agency-landing-page-main/images/icon-facebook.svg"
+          alt=""
+        />
+        <img
+          src="./sunnyside-agency-landing-page-main/images/icon-instagram.svg"
+          alt=""
+        />
+        <img
+          src="./sunnyside-agency-landing-page-main/images/icon-twitter.svg"
+          alt=""
+        />
+        <img
+          src="./sunnyside-agency-landing-page-main/images/icon-pinterest.svg"
+          alt=""
+        />
+      </div>
+    </div>
+  </body>
+</html>
