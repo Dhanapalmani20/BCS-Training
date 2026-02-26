@@ -40,12 +40,15 @@ print(f" Highest rated books are {rate[0]}, {rate[1]} and {rate[2]}")
 
 # Task 1.3.2 (Home assignment)
 # Get the rating from user and match with books in the store
-
+high_rated_titles=[]
+for book in books:
+   
 
 # Expected Output
 # Case 1:
 # Please provide rating: 4.7
 # The books available are Sapiens, A Brief History of Time and Clean Code 
+
 # Case 2:
 # Please provide rating: 4.9
 # The book available is Sapiens 

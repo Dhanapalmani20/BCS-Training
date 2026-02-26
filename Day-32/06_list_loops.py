@@ -54,7 +54,7 @@ characters = ["Hello kitty", "Goku", "Pikachu", "Luffy", "Yuji Itadori", "Levi"]
 big_names=[]
 
 for character in characters:
-    if len(characters>=6):
+    if len(character[i])>=6:
      big_names.append(characters[i])
     
      print(big_names)
